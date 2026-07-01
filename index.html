@@ -10,6 +10,7 @@
 <meta property="og:description" content="Chennai's premier digital marketing agency. Data-driven strategies that grow your business.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script type="application/ld+json">
@@ -860,6 +861,12 @@
   @media (max-width: 768px) {
     .nav-links, .nav-cta { display: none; }
     .hamburger { display: flex; }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
     .services-grid { grid-template-columns: 1fr; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .cases-grid { grid-template-columns: 1fr; }
@@ -899,7 +906,38 @@
   color:#2563eb;
   font-weight:600;
 }
+.social-links{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
 
+.social-link{
+    width:50px;
+    height:50px;
+    border:2px solid #ffffff;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    background:transparent;
+    transition:all .3s ease;
+}
+
+.social-link i{
+    font-size:24px;
+    color:#ffffff;
+}
+
+.social-link:hover{
+    background:#ffffff;
+    transform:translateY(-4px);
+}
+
+.social-link:hover i{
+    color:#0a0a0f;
+}
 </style>
 </head>
 <body>
@@ -1321,21 +1359,27 @@
           </div>
         </div>
         <div class="cinfo-item">
-          <div class="cinfo-icon">📷</div>
+          <div class="scard-icon">
+    <i class="fab fa-instagram"></i>
+</div>
           <div class="cinfo-text">
             <h5>Instagram</h5>
             <a href="https://www.instagram.com/brocodemedia.bc/?utm_source=ig_web_button_share_sheet" target="_blank">@brocodemedia.bc</a>
           </div>
         </div>
         <div class="cinfo-item">
-          <div class="cinfo-icon">📘</div>
+          <div class="scard-icon">
+    <i class="fab fa-facebook-f"></i>
+</div>
           <div class="cinfo-text">
             <h5>Facebook</h5>
             <a href="https://www.facebook.com/profile.php?id=61591280981531#" target="_blank">Brocode Media</a>
           </div>
         </div>
         <div class="cinfo-item">
-          <div class="cinfo-icon">▶️</div>
+          <div class="scard-icon">
+    <i class="fab fa-youtube"></i>
+</div>
           <div class="cinfo-text">
             <h5>YouTube</h5>
             <a href="https://youtube.com/@brocodemedia.c?si=TGSWbYe4m9uFfhur" target="_blank">@brocodemedia.c</a>
@@ -1414,11 +1458,22 @@
         </a>
         <p>Where brands get their soul. Chennai's creative-first digital marketing agency — turning bold ideas into measurable growth.</p>
         <div class="social-links" style="margin-top:1.2rem">
-          <a href="https://wa.me/918072923249" class="social-link" target="_blank" title="WhatsApp">💬</a>
-          <a href="https://www.instagram.com/brocodemedia.bc/?utm_source=ig_web_button_share_sheet" class="social-link" target="_blank" title="Instagram">📷</a>
-          <a href="https://www.facebook.com/profile.php?id=61591280981531#" class="social-link" target="_blank" title="Facebook">📘</a>
-          <a href="https://youtube.com/@brocodemedia.c?si=TGSWbYe4m9uFfhur" class="social-link" target="_blank" title="YouTube">▶️</a>
-        </div>
+  <a href="https://wa.me/918072923249" class="social-link" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://www.instagram.com/brocodemedia.bc/?utm_source=ig_web_button_share_sheet" class="social-link" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/profile.php?id=61591280981531#" class="social-link" target="_blank" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://youtube.com/@brocodemedia.c?si=TGSWbYe4m9uFfhur" class="social-link" target="_blank" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
